@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <!-- WinJS-Verweise -->
+    <!-- Zur Laufzeit wird "ui-themed.css" in "ui-themed.light.css" oder "ui-themed.dark.css" aufgelöst,
+    je nach der Designeinstellung des Benutzers. Dies ist Teil der MRT-Ressourcenladefunktion. -->
+    <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
+    <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
+
+    <!-- App1 references -->
+    <script src="/js/default.js"></script>
+    <script src="/js/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="/css/chicago.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Chicago - by Michael Strasser</title>
+</head>
+<body>
+    <div id="header" class="wrapper">
+        Chicago
+        <div id="copyright">&copy; 2015 by Michael Strasser</div>
+    </div>
+    <div id="game-settings-wrapper" class="wrapper">
+        Anzahl der Spieler<br>
+        <input id="num-players" type="text"><br>
+        <div class="button" id="set-num-players">Weiter</div><br>
+    </div>
+    <div id="set-playername-wrapper" class="wrapper">
+        <div id="name-header">Name eingeben</div>
+        <div id="player_names"></div>
+        <div class="button" id="start-game">Spiel starten</div><br>
+    </div>
+    <div id="pitch-wrapper">
+        <!--Würfel-->
+        <div id="dice-wrapper" class="wrapper">
+            <div id="dice-1" class="dice">0</div>
+            <div id="dice-2" class="dice">0</div>
+            <div id="dice-3" class="dice">0</div>
+            <div class="clearing"></div>
+            <div id="roll" class="button roll">Würfeln</div><br>
+        </div>
+
+        <!--Spielinfo-->
+        <div id="gameinfo-wrapper" class="wrapper">
+            <div id="active-player-name" class="center-text">Spieler 1</div>
+            <div id="player-img">0</div>
+            <div id="remaining-rolls-wrapper" class="center-text">
+                <span id="remaining-rolls">3</span> Würfe verbleibend
+            </div>
+            <div id="next-player" class="button">Nächster Spieler</div>
+            <div id="new-round" class="button">Neue Runde</div>
+        </div>
+
+        <!--Spielerinformation-->
+        <div class="wrapper" id="playerinfo-wrapper-div">
+            <table id="playerinfo-wrapper" class="table" cellspacing="0">
+                <tr id="playerinfo_header" class="table-row" style="background-color:#eee">
+                    <td class="table-cell" width="40%">Name</td>
+                    <td class="table-cell center-text" width="20%">Punkte</td>
+                    <td class="table-cell center-text" width="20%">Bierdeckel</td>
+                    <td class="table-cell center-text" width="20%">Drinks</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="darkscreen"></div>
+    <div id="window-wrapper">
+        <div id="window-message">Nachricht!</div>
+        <div id="window-buttons">
+            <div class="window-button" id="ok-button">OK</div>
+            <div class="window-button" id="cancel-button">Abbrechen</div>
+            <div class="window-button" id="prost-button">Neues Spiel</div>
+        </div>
+    </div>
+</body>
+</html>

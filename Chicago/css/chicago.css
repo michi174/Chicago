@@ -1,0 +1,257 @@
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+
+input
+{
+    width: 80%;
+    height: 30px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    margin: 2px;
+}
+
+body 
+{
+    font-family:'WOL_SL','Segoe UI Semilight','Segoe UI','Tahoma,Helvetica','sans-serif'; 
+    color:#222; 
+    background-color: #eee; 
+}
+
+#header
+{
+    text-align: center;
+    font-size: 30px;
+    line-height:35px;
+}
+
+.table
+{
+
+}
+
+.table-row
+{
+    display: table-row;
+    line-height: 45px;
+}
+
+.table-cell
+{
+    display: table-cell;
+    text-align: left;
+    margin: auto;
+}
+
+.wrapper
+{
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px 0px 10px 0px;
+}
+
+#dice-wrapper
+{
+    text-align: center;
+}
+.dice
+{
+    width: 85px;
+    height: 85px;
+    border: 1px solid #ccc;
+    margin-left: 2px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 7px;
+    line-height: 90px;
+    text-align: center;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    
+}
+#dice-1 { }
+
+.dice-hover
+{
+    background-color: #eee;
+}
+
+.dice-hover-hold
+{
+    opacity:0.7;
+}
+
+.dice-hold
+{
+    background-color:#9FFF00;   
+}
+
+.clearing { clear: both }
+
+.button
+{
+    line-height: 50px;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+}
+.button:active
+{
+    background-color: #eee;
+    cursor:wait;
+}
+
+#player-img
+{
+    margin: auto;
+    display: inline-block;
+    line-height: 65px;
+    font-size: 35px;
+    font-weight: bold;
+}
+#copyright
+{
+    font-size: 15px;
+}
+.center-text
+{
+    text-align: center;
+}
+#playerinfo-wrapper
+{
+    text-align: center;
+    min-height: 30px;
+    margin: auto;
+    width: 96%;
+}
+
+#playerinfo-wrapper-div
+{
+    display: none;
+}
+#game-settings-wrapper
+{
+    text-align: center;
+}
+#num-players
+{
+    height: 40px;
+    margin-top: 10px;
+    width: 40px;
+    text-align: center;
+}
+#set-playername-wrapper, #gameinfo-wrapper, #dice-wrapper, #playerinfo-wrapper
+{
+    text-align: center;
+    display: none;
+}
+
+#name-header
+{
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.left-text
+{
+    text-align: left !important;
+}
+#new-round
+{
+    display: none;
+}
+
+#darkscreen
+{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    background-color: #000;
+    opacity: 0.5
+}
+
+#window-wrapper
+{
+    z-index: 100;
+    width: 90%;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    margin-top: -125px;
+    left: 50%;
+    margin-left:-45%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 3px #333;
+    display: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+#window-message
+{
+    min-height: 100px;
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 20px;
+}
+#window-buttons
+{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #eee;
+ 
+}
+.window-button
+{
+    line-height: 30px;
+    border: 1px solid #eee;
+    min-width: 50%;
+    border-radius: 5px;
+    margin: auto;
+    background-color: #ccc;
+    display: inline-block;
+    box-shadow: 0 0 0px 1px #aaa;
+    margin-left: 5px;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+}
+.window-button:active
+{
+    background-color: #bbb;
+}
+#cancel-button
+{
+    display: none;
+}
+#prost-button
+{
+    display: none;
+}
