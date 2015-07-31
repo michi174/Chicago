@@ -8,6 +8,7 @@
     app.onactivated = function (args) {
         if (args.detail.kind === activation.ActivationKind.launch) {
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
+
                 $(document).ready(function () {
 
                     //Spielinformationen
@@ -437,7 +438,7 @@
                             }
                         }
 
-                            //Es wurde mehrere Spieler ermittelt, die die gleichniedrige Punktezahl haben. Es wird eine neue Runde mit diesen Spielern gestartet.
+                        //Es wurde mehrere Spieler ermittelt, die die gleichniedrige Punktezahl haben. Es wird eine neue Runde mit diesen Spielern gestartet.
                         else {
                             message = "";
                             dp = new Array();
